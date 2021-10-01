@@ -13,7 +13,7 @@ metadata:
   name: springappsecrets
 type: Opaque
 stringData:   # We can define multiple key value pairs.
-  password: devdb@123
+  password: Nagu@123
 
 ---
 apiVersion: v1
@@ -60,7 +60,7 @@ spec:
     spec:
       containers:
       - name: springappcontainer
-        image: dockerhandson/spring-boot-mongo
+        image: nagulmeeramd/spring-boot-mongo
         ports:
         - containerPort: 8080
         env:
