@@ -2,7 +2,7 @@ version: '3.1'
 
 services:
   springboot:
-    image: dockerhandson/spring-boot-mongo:latest
+    image: nagulmeeramd/spring-boot-mongo:latest
     restart: always # This will be ignored if we deploy in docker swarm
     environment:
     - MONGO_DB_HOSTNAME=mongo
@@ -28,8 +28,8 @@ services:
   mongo:
     image: mongo
     environment:
-    - MONGO_INITDB_ROOT_USERNAME=devdb
-    - MONGO_INITDB_ROOT_PASSWORD=devdb123
+    - MONGO_INITDB_ROOT_USERNAME=nagulmeeramd
+    - MONGO_INITDB_ROOT_PASSWORD=Nagu@123
     volumes:
       - mongodb:/data/db
     restart: always
